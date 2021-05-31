@@ -1,0 +1,48 @@
+.addDiscountModal .modal-dialog {
+  margin: 5.75rem auto !important;
+  margin-left: 450px !important;
+}
+.addDiscountModal .modal-dialog .modal-content {
+  width: 900px !important;
+  border: none !important;
+  border-radius: 20px !important;
+  padding: 20px !important;
+  background: #f3f3f3 !important;
+}
+.addDiscountModal .modal-dialog .modal-content .modal-header {
+  border-bottom: none !important;
+  padding-bottom: 0;
+}
+.addDiscountModal .modal-dialog .modal-content .modal-body {
+  padding-top: 0 !important;
+}
+
+.addDiscountModal
+  .modal-dialog
+  .modal-content
+  .modal-body
+  form
+  .form-row
+  .form-group
+  .form-label {
+  font-size: 15px !important;
+  font-size: 'UbuntuRegular';
+}
+
+.addDiscountModal .modal-dialog .modal-content .modal-body form button {
+  border: none;
+  outline: none;
+  padding: 10px 40px;
+  color: white;
+  background-color: var(--orange);
+  border-radius: 6px;
+}
+.addDiscountModal .modal-dialog .modal-content .modal-body form button.cancle {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 10px 40px;
+  color: var(--orange);
+  border-radius: 6px;
+  /* border: 1px solid var(--orange); */
+}

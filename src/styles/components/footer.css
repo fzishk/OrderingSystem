@@ -1,0 +1,36 @@
+.footer {
+  background-color: #1b1b1b;
+  width: 100%;
+  padding: 70px 0;
+}
+.footerDescription {
+  width: 70%;
+}
+.linksContainer {
+  width: 80%;
+  margin: 0 auto !important;
+}
+.linksContainer h5 {
+  font-size: 22px;
+}
+
+.linksContainer2 {
+  padding-left: 5rem;
+}
+
+@media screen and (max-width: 845px) {
+  .linksContainer {
+    margin-bottom: 10rem !important;
+  }
+
+  .linksContainer2 {
+    padding-left: 0;
+  }
+}
+
+/* footer display none  */
+/* @media screen and (max-width: 992px) {
+  .footer {
+    display: none;
+  }
+} */

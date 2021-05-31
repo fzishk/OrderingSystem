@@ -1,0 +1,212 @@
+.orderPlaceScreen {
+  margin-top: 50px !important;
+  margin-bottom: 100px !important;
+  position: relative !important;
+}
+.orderItem {
+  border-bottom: 1px solid #707070;
+  margin-bottom: 10px;
+  padding: 0 10px 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.orderItem .orderItemDesc {
+  display: flex;
+  align-items: baseline;
+}
+.orderItem .name {
+  font-weight: 700;
+}
+.orderItem .orderItem_addOns {
+  color: #1b1b1b;
+}
+
+.yourInfo_paymentMethodWrapper {
+  margin-right: 50px;
+}
+.yourInfo_paymentMethodWrapper form .form-group {
+  position: relative;
+}
+.yourInfo_paymentMethodWrapper form .form-group .form-control.icon-input {
+  padding-right: 40px;
+}
+.yourInfo_paymentMethodWrapper form .form-group .form-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 8px;
+  right: 15px;
+}
+.yourInfo_paymentMethodWrapper form .form-group .contactNumber {
+  padding-left: 80px;
+}
+.yourInfo_paymentMethodWrapper form .form-group .calenderIcon {
+  position: absolute;
+  top: 36px;
+  right: 16px;
+  background-color: white;
+}
+.yourInfo_paymentMethodWrapper form .form-group .calenderIcon1 {
+  position: absolute;
+  top: 6px;
+  right: 22px;
+  background-color: white;
+}
+/* .yourInfo_paymentMethodWrapper form .form-group .countryCodeDropdownArrow {
+  position: absolute;
+  top: 13px;
+  left: 42px;
+  color: white;
+  font-size: 15px;
+  font-weight: bolder;
+  z-index: 100;
+  background-color: var(--orange);
+} */
+
+.yourInfo_paymentMethodWrapper form .form-group .countryCodeList {
+  /* background-color: var(--orange) !important; */
+  position: absolute;
+  height: 100%;
+}
+.yourInfo_paymentMethodWrapper form .ant-radio-group {
+  width: 100%;
+}
+.yourInfo_paymentMethodWrapper form .ant-radio-group .ant-space-vertical {
+  width: 100%;
+}
+.yourInfo_paymentMethodWrapper
+  form
+  .form-group
+  .countryCodeList
+  .ant-select-selector {
+  border-radius: 0.25rem !important;
+  align-items: center;
+  background: var(--orange);
+  color: white;
+  height: 100%;
+}
+.yourInfo_paymentMethodWrapper
+  form
+  .form-group
+  .countryCodeList
+  .ant-select-arrow {
+  color: white !important;
+}
+.yourInfo_paymentMethodWrapper
+  form
+  .form-group
+  .countryCodeList
+  .ant-select-selector:hover {
+  border-color: var(--orange);
+}
+
+.yourInfo_paymentMethodWrapper
+  form
+  .form-group
+  .countryCodeList::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.yourInfo_paymentMethodWrapper form .form-group span.placeholder {
+  position: absolute;
+  padding: 0 10px;
+  font-family: 'Ubunturegular';
+  color: gray;
+  top: 8px;
+  left: 15px;
+  z-index: 1;
+  background-color: white;
+}
+
+.yourInfo_paymentMethodWrapper form .form-group #message {
+  resize: none;
+}
+.yourInfo_paymentMethodWrapper .visaMasterCardImagesWrapper img {
+  width: 40px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.yourOrderWrapper {
+  /* margin-left: 50px; */
+  margin-top: 10px;
+  border: 1px solid #bebebe;
+  border-radius: 15px;
+  padding: 30px 20px;
+}
+.yourOrderWrapper .pricesContainer .coupon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.yourOrderWrapper .pricesContainer .coupon button {
+  border: none;
+  outline: none;
+  color: var(--orange);
+  background-color: transparent;
+  padding: 5px 20px;
+  border: 1px solid var(--orange);
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.yourOrderWrapper .pricesContainer .coupon .form-control {
+  width: 100%;
+}
+
+.yourOrderWrapper .pricesContainer .yourOrderBtnContainer {
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+}
+
+.yourOrderWrapper .pricesContainer .yourOrderBtnContainer .nextBtn {
+  display: none;
+}
+.yourOrderWrapper .pricesContainer .yourOrderBtnContainer button {
+  border: none;
+  outline: none;
+  background-color: var(--orange);
+  padding: 5px 20px;
+  border-radius: 5px;
+  color: white;
+  width: 65%;
+  /* font-size: px; */
+}
+
+@media screen and (max-width: 768px) {
+  .yourInfo_paymentMethodWrapper {
+    margin-right: 0;
+  }
+  .yourOrderWrapper {
+    margin-left: 0;
+  }
+  .yourOrderWrapper .pricesContainer .coupon {
+    display: flex;
+    flex-direction: column;
+  }
+  .yourOrderWrapper .pricesContainer .coupon .form-control {
+    margin-bottom: 20px;
+  }
+  .yourOrderWrapper .pricesContainer .coupon button {
+    width: 100%;
+  }
+  .yourOrderWrapper .pricesContainer .yourOrderBtnContainer {
+    position: fixed;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+  }
+  .yourOrderWrapper .pricesContainer .yourOrderBtnContainer .nextBtn {
+    display: block;
+    font-family: 'UbuntuRegular' !important;
+    font-weight: lighter !important;
+  }
+  .yourOrderWrapper .pricesContainer .yourOrderBtnContainer .tickIconBtn {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -1000%;
+  }
+}
